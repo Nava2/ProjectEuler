@@ -12,11 +12,13 @@
 #include <list>
 using namespace std;
 
-class Utils {
-public:
-	static bool isPrime(long n);
-	static bool isPrime(long, vector<long>);
-	static list<long> getPrimes(long);
+namespace Utils {
+	bool isPrime(long n);
+	bool isPrime(long, vector<long>);
+	list<long> getPrimes(long);
+	void explode( string, char, vector<std::string>& );
+
+	long triangleSum(long);
 };
 
 

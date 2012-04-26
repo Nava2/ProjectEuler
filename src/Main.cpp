@@ -5,11 +5,11 @@
  *      Author: kevin
  */
 
-#include "headers/P010.h"
+#include "headers/P011.h"
 #include <ctime>
 
 
-#define CLASS P010
+#define CLASS P011
 
 int main() {
 	CLASS p;

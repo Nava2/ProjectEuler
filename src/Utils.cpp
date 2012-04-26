@@ -8,6 +8,7 @@
 #include "headers/Utils.h"
 #include <vector>
 #include <cmath>
+#include <string>
 using namespace std;
 
 bool Utils::isPrime(long n) {
@@ -63,6 +64,22 @@ list<long> Utils::getPrimes(long max) {
 	}
 
 	return primes;
+}
+
+void Utils::explode( string str, char delim, vector<std::string>& array )
+{
+	string::size_type pos = 0;
+	string::size_type oldPos = 0;
+	while( (pos = str.find(delim, oldPos)) != string::npos)
+	{
+		string sub = str.substr(oldPos, pos-oldPos);
+		array.push_back(sub);
+		oldPos = pos+1;
+	}
+}
+
+long Utils::triangleSum(long n) {
+	return (n * (n+1))/2;
 }
 
 
