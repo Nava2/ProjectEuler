@@ -5,9 +5,7 @@
  *      Author: kevin
  */
 
-#include <iostream>
-#include <stdlib.h>
-using namespace std;
+#include "headers/P4.h"
 
 bool isPalindrome(int n) {
 	char* chars = (char*)malloc(20);
@@ -19,7 +17,7 @@ bool isPalindrome(int n) {
 	return r == n;
 }
 
-int main() {
+void P4::exec(void) {
 	int p1 = 0, p2 = 0;
 	int pc = 0;
 

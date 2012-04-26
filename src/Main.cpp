@@ -14,12 +14,12 @@
 int main() {
 	CLASS p;
 
-	time_t start = std::time(NULL);
+	clock_t start = std::clock();
 
 	p.exec();
 
-	time_t end = std::time(NULL);
-	double x = (end-start) * 1.0;
+	clock_t end = std::clock();
+	double x = (end-start) * 1.0 / CLOCKS_PER_SEC;
 
 	cout<< "Time: " << x << "s" << endl;
 }

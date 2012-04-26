@@ -5,10 +5,9 @@
  *      Author: kevin
  */
 
-#include <iostream>
-using namespace std;
+#include "headers/P6.h"
 
-int main() {
+void P6::exec(void) {
 	int sum_sqr = 0;
 	int sqr_sum = 0;
 	for (int i = 1; i <= 100; i++) {

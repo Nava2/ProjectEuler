@@ -38,15 +38,17 @@ bool Utils::isPrime(long n, vector<long> v) {
 	return true;
 }
 
-list<long> genPrimes(long max) {
+list<long> Utils::getPrimes(long max) {
 	list<long> primes;
 
 	bool vals[max];
 	for (int i = 0; i<max; i++)
 		vals[i]=true;
 
+
+
 	double d = sqrt(max*1.0);
-	for (int i = 0; i <= d; i++) {
+	for (int i = 2; i <= d; i++) {
 		if (vals[i]) {
 			int j = i;
 			while ((j += i) < max) {

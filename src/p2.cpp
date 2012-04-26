@@ -4,10 +4,10 @@
  *  Created on: Apr 24, 2012
  *      Author: kevin
  */
-#include <iostream>
-using namespace std;
 
-int main() {
+#include "headers/P2.h"
+
+void P2::exec(void) {
 	int prev1 = 1, prev2 = 1;
 	int res = 0;
 

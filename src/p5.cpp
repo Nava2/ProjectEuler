@@ -4,10 +4,10 @@
  *  Created on: Apr 25, 2012
  *      Author: kevin
  */
-#include <iostream>
-using namespace std;
 
-int main() {
+#include "headers/P5.h"
+
+void P5::exec(void) {
 	int nums[] = {11, 13, 14, 15, 16, 17, 18, 19, 20};
 
 	long n = 20;
