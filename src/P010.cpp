@@ -12,16 +12,13 @@ using namespace std;
 
 void P010::exec(void) {
 
-	vector<long> primes;
+	list<long> primes = Utils::getPrimes(2000000);
 
-	primes.push_back(2l);
+	list<long>::iterator it = primes.begin();
 
-	long sum = 1;
-	for (long i = 3; i < 2000000; i+=2) {
-		if (Utils::isPrime(i, primes)) {
-			sum += i;
-			primes.push_back(i);
-		}
+	long sum = 0;
+	for (; it != primes.end() ; it++) {
+		sum += *it;
 	}
 
 	cout << "Result: " << sum << endl;

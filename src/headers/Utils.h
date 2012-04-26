@@ -9,12 +9,14 @@
 #define UTILS_H_
 
 #include <vector>
+#include <list>
 using namespace std;
 
 class Utils {
 public:
 	static bool isPrime(long n);
 	static bool isPrime(long, vector<long>);
+	static list<long> getPrimes(long);
 };
 
 
